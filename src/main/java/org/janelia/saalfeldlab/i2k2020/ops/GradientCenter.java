@@ -68,7 +68,7 @@ public class GradientCenter<T extends RealType<T> & NativeType<T>> implements Co
 
 		while (c.hasNext()) {
 			final T t = c.next();
-			t.setReal((b.next().getRealDouble() - a.next().getRealDouble()) * norm);
+			t.setReal((b.next().getRealDouble() - a.next().getRealDouble()) / norm);
 		}
 	}
 }
